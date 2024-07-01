@@ -9,28 +9,28 @@ import { FaDev, FaDatabase } from "react-icons/fa";
 const personalDetails = [
   {
     label: "Name",
-    value: "John Doe",
+    value: "Dominic Kimani",
   },
   {
     label: "Age",
-    value: "27",
+    value: "24",
   },
   {
     label: "Address",
-    value: "India",
+    value: "  Kenya",
   },
   {
     label: "Email",
-    value: "demo@example.com",
+    value: "kymdommie@gmail.com",
   },
   {
     label: "Contact No",
-    value: "+11 3456789056",
+    value: "+254797543225",
   },
 ];
 
 const jobSummary =
-  "Seasoned and independent Front End Developer with 5 years of experience in blending the art of design with skill of programming to deliver an immersive and engaging user experience through efficient website development, proactive feature optimization, and relentless debugging. Very passionate about aesthetics and UI design. It is imperative that you provide a thorough and professional approach to your resume. As a Front End Developer you will be judged by your ability to use UX and UI concepts and follow design guidelines. It is about expressing your attention to detail and how you can help implement design ideas for your future employer";
+  "I am an inventive software engineer. I specialize in creating intuitive, responsive, and visually appealing user interfaces. I am an enthusiastic InformationTechnology professional with keen interest and experience Software development. I’m a highly skilled and results-driven Software Engineer with experience in designing and developing robust, efficient, andscalable software solutions. I collaborate with cross-functional teams and use cutting-edge technologies to tackle complex challenges. I’m committed to delivering innovative solutions that enhance user experiences and drive business growth. I’m passionate about stayingcurrent with emerging trends and continuously expanding my skillset to deliver high-qualitysoftware that meets and exceeds client and company objectives.";
 
 const About = () => {
   return (

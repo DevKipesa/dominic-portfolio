@@ -11,7 +11,7 @@ const Home = () => {
   };
 
   return (
-    < div className="home">
+    <div className="home">
       <div className="home__text-wrapper">
         <h1>
           Hello, I'm Dominic,
@@ -32,9 +32,13 @@ const Home = () => {
       >
         <div className="home__contact-me">
           <button onClick={handleNavigateToContactMePage}>Hire Me</button>
+          <a href="/chege-dominic-kimani.pdf" download="Dominic_Resume.pdf">
+            <button className="resume">Download Resume</button>
+          </a>
         </div>
       </Animate>
-      </div>
+    </div>
   );
 };
+
 export default Home;

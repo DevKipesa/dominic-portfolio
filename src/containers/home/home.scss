@@ -13,7 +13,8 @@
 
     h1 {
       color: var(--yellow-theme-main-color);
-      margin: 0px;
+      // margin: 0px;
+      margin-top: 130px;
       font-weight: 500;
       font-size: 8rem;
       line-height: 10rem;
@@ -30,7 +31,7 @@
 
     button{
       cursor: pointer;
-      padding: 10px 70px;
+      padding: 10px 40px;
       font-size: 2rem;
       background: transparent;
       color: var(--yellow-theme-main-color);
@@ -44,6 +45,9 @@
       }
     }
   }
+}
+.resume{
+  margin-left: 15px;
 }
 
 
