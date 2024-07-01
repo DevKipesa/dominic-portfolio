@@ -1,5 +1,5 @@
 import React from "react";
-import PageHeaderContent from "../../components/pageHeaderContent";
+import PageHeaderContent from "../../components/pageHeaderContent/header";
 import { BsInfoCircleFill } from "react-icons/bs";
 import {
   VerticalTimeline,
@@ -7,7 +7,7 @@ import {
 } from "react-vertical-timeline-component";
 import 'react-vertical-timeline-component/style.min.css'
 import { data } from "./utils";
-import './styles.scss';
+import './resume.scss';
 import {MdWork} from 'react-icons/md';
 
 const Resume = () => {

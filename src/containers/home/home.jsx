@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
-import "./styles.scss";
+import "./home.scss";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,7 +11,7 @@ const Home = () => {
   };
 
   return (
-    <section id="home" className="home">
+    < div className="home">
       <div className="home__text-wrapper">
         <h1>
           Hello, I'm Dominic,
@@ -34,7 +34,7 @@ const Home = () => {
           <button onClick={handleNavigateToContactMePage}>Hire Me</button>
         </div>
       </Animate>
-    </section>
+      </div>
   );
 };
 export default Home;
