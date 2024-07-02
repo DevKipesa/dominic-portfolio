@@ -45,11 +45,21 @@
       }
     }
   }
+  
 }
 .resume{
   margin-left: 15px;
 }
-
+.home__social-media {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.home__social-media a {
+  color: #ffdd40; 
+  transition: color 0.3s ease;
+}
 
 
 @media only screen and (max-width: 550px) {
