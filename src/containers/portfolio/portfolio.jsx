@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PageHeaderContent from "../../components/pageHeaderContent/header";
 import { BsInfoCircleFill } from "react-icons/bs";
 import ImageOne from "../../images/image1.jpg";
@@ -7,7 +7,6 @@ import ImageThree from "../../images/image3.jpg";
 import ImageFour from "../../images/image4.jpg";
 import ImageFive from "../../images/image5.jpg";
 import "./portfolio.scss";
-import { useState } from "react";
 
 const portfolioData = [
   {
@@ -17,7 +16,7 @@ const portfolioData = [
     link: "https://pcee-dash2.vercel.app/",
   },
   {
-    id: 3,
+    id: 2,
     name: "Olympier",
     link: "https://olympierv2.vercel.app/",
     image: ImageTwo,
@@ -29,14 +28,13 @@ const portfolioData = [
     link: "https://dominic-portfolio-kappa.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "Shepard Website",
     image: ImageFour,
-
     link: "https://shepard-one.vercel.app/",
   },
   {
-    id: 3,
+    id: 2,
     name: "PCEE LandingPage",
     image: ImageFive,
     link: "https://pceefrontend.vercel.app/",
@@ -50,7 +48,7 @@ const filterData = [
   },
   {
     filterId: 2,
-    label: "Developement",
+    label: "Development",
   },
   {
     filterId: 3,
@@ -59,27 +57,25 @@ const filterData = [
 ];
 
 const Portfolio = () => {
-  const [filteredvalue, setFilteredValue] = useState(1);
+  const [filteredValue, setFilteredValue] = useState(1);
   const [hoveredValue, setHoveredValue] = useState(null);
 
-  function handleFilter(currentId) {
+  const handleFilter = (currentId) => {
     setFilteredValue(currentId);
-  }
+  };
 
-  function handleHover(index) {
+  const handleHover = (index) => {
     setHoveredValue(index);
-  }
+  };
 
-  console.log("====================================");
-  console.log(hoveredValue);
-  console.log("====================================");
+  const handleVisitLink = (link) => {
+    window.location.href = link;
+  };
 
   const filteredItems =
-    filteredvalue === 1
+    filteredValue === 1
       ? portfolioData
-      : portfolioData.filter((item) => item.id === filteredvalue);
-
-  console.log(filteredItems);
+      : portfolioData.filter((item) => item.id === filteredValue);
 
   return (
     <section id="portfolio" className="portfolio">
@@ -91,7 +87,7 @@ const Portfolio = () => {
         <ul className="portfolio__content__filter">
           {filterData.map((item) => (
             <li
-              className={item.filterId === filteredvalue ? "active" : ""}
+              className={item.filterId === filteredValue ? "active" : ""}
               onClick={() => handleFilter(item.filterId)}
               key={item.filterId}
             >
@@ -108,7 +104,7 @@ const Portfolio = () => {
               onMouseLeave={() => handleHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a>
+                <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <img alt="dummy data" src={item.image} />
                 </a>
               </div>
@@ -116,7 +112,9 @@ const Portfolio = () => {
                 {index === hoveredValue && (
                   <div>
                     <p>{item.name}</p>
-                    <button>Visit</button>
+                    <button onClick={() => handleVisitLink(item.link)}>
+                      Visit
+                    </button>
                   </div>
                 )}
               </div>
@@ -127,4 +125,5 @@ const Portfolio = () => {
     </section>
   );
 };
+
 export default Portfolio;
