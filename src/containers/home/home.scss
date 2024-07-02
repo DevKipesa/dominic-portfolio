@@ -54,13 +54,16 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
 }
 .home__social-media a {
   color: #ffdd40; 
   transition: color 0.3s ease;
+  transition: ease;
 }
-
+.home__social-media a :hover{
+  transform: scale(1.1);
+}
 
 @media only screen and (max-width: 550px) {
   .home__text-wrapper h1 {
