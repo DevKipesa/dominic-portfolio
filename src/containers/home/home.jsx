@@ -37,8 +37,7 @@ const Home = () => {
             <button className="resume">Download Resume</button>
           </a>
         </div>
-      </Animate>
-      <div className="home__social-media">
+        <div className="home__social-media">
         <a href="https://x.com/i_am_kipesa?t=1O2c2KE2Jxn2UVRi5-VY3g&s=09" target="_blank" rel="noopener noreferrer">
           <FaTwitter size={30} />
         </a>
@@ -49,6 +48,7 @@ const Home = () => {
           <FaInstagram size={30} />
         </a>
       </div>
+      </Animate>
     </div>
   );
 };

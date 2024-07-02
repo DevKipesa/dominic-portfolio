@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Particles from "react-tsparticles";
+import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import Home from "./containers/home/home";
 import About from "./containers/about/about";
