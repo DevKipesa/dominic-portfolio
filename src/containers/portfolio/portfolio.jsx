@@ -12,34 +12,34 @@ import { useState } from "react";
 const portfolioData = [
   {
     id: 2,
-    name: "Ecommerce",
+    name: "PCEE",
     image: ImageOne,
-    link: "",
+    link: "https://pcee-dash2.vercel.app/",
   },
   {
     id: 3,
-    name: "Notes App",
-    link: "",
+    name: "Olympier",
+    link: "https://olympierv2.vercel.app/",
     image: ImageTwo,
   },
   {
     id: 2,
-    name: "Supplier Design",
+    name: "My Portfolio",
     image: ImageThree,
-    link: "",
+    link: "https://dominic-portfolio-kappa.vercel.app/",
   },
   {
     id: 2,
-    name: "Todo App",
+    name: "Shepard Website",
     image: ImageFour,
 
-    link: "",
+    link: "https://shepard-one.vercel.app/",
   },
   {
     id: 3,
-    name: "Shopping cart design",
+    name: "PCEE LandingPage",
     image: ImageFive,
-    link: "",
+    link: "https://pceefrontend.vercel.app/",
   },
 ];
 
