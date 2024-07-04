@@ -23,11 +23,11 @@ function App() {
 
   return (
     <div className="App">
-      {/* particles js */}
+      {/* particles js
 
       {renderParticleJsInHomePage && (
         <Particles id="particles" options={particles} init={handleInit} />
-      )}
+      )} */}
 
       {/* navbar */}
       <Navbar />
