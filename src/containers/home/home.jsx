@@ -32,7 +32,7 @@ const Home = () => {
         }}
       >
         <div className="home__contact-me">
-          <button onClick={handleNavigateToContactMePage}>Hire Me</button>
+          <button className="resume" onClick={handleNavigateToContactMePage}>Hire Me</button>
           <a href="/resume.pdf" download="Dominic_Resume.pdf">
             <button className="resume">Download Resume</button>
           </a>
