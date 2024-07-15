@@ -17,7 +17,7 @@ const Home = () => {
         <h1>
           Hello, I'm Dominic,
           <br />
-          Front end developer
+          Software developer
         </h1>
       </div>
       <Animate
